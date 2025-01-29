@@ -67,6 +67,7 @@ if(BUILD_TESTING)
   target_link_libraries(test_conversions
     tf2_2d
   )
+  target_include_directories(test_conversions PUBLIC include/${PROJECT_NAME})
 
   # Rotation Tests
   ament_add_gtest(test_rotation
@@ -75,6 +76,7 @@ if(BUILD_TESTING)
   target_link_libraries(test_rotation
     tf2_2d
   )
+  target_include_directories(test_rotation PUBLIC include/${PROJECT_NAME})
 
   # Transform Tests
   ament_add_gtest(test_transform
@@ -83,6 +85,7 @@ if(BUILD_TESTING)
   target_link_libraries(test_transform
     tf2_2d
   )
+  target_include_directories(test_transform PUBLIC include/${PROJECT_NAME})
 
   # Vector2 Tests
   ament_add_gtest(test_vector2
@@ -91,6 +94,7 @@ if(BUILD_TESTING)
   target_link_libraries(test_vector2
     tf2_2d
   )
+  target_include_directories(test_vector2 PUBLIC include/${PROJECT_NAME})
 endif()
 
 ament_export_dependencies(

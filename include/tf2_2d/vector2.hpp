@@ -34,7 +34,7 @@
 #ifndef TF2_2D__VECTOR2_HPP_
 #define TF2_2D__VECTOR2_HPP_
 
-#include <tf2/LinearMath/Scalar.h>
+#include <tf2/LinearMath/Scalar.hpp>
 
 #include <Eigen/Core>
 
